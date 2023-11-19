@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-image: url(../img/backgroundpage2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+/* Début du HEADER*/
+
+header {
+  display: flex;
+  width: 98vw;
+  height: 12.5vw;
+}
+
+/* Header haut gauche*/
+
+.accueil {
+  display: flex;
+  width: 12.5vw;
+  height: 12.5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 5vw;
+  height: 7vw;
+}
+
+/* Header haut milieu*/
+
+.title {
+  display: flex;
+  width: 75vw;
+  height: 12.5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre {
+  display: flex;
+  align-items: 31.25vw;
+  width: 30vw;
+}
+
+/* Header haut droite*/
+
+.onglet {
+  display: flex;
+  min-width: 12.5vw;
+  height: 12.5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.catégorie {
+  display: flex;
+  width: 3.5vw;
+  height: 3.5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FIN DU HEADER */
+
+/* Début du MAIN */
+
+main {
+  width: 98vw;
+  min-height: 12.5vw;
+  max-height: 55vw;
+  height: 50vw;
+}
+
+.synopsishp {
+  display: flex;
+  width: 98vw;
+  height: 15vw;
+}
+
+.texte1 {
+  margin-top: 7vw;
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  margin-left: 25vw;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(180, 178, 37);
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.poudlard {
+  display: flex;
+  width: 98vw;
+  margin-top: 8.5vw;
+}
+
+.poudlardchateau {
+  display: flex;
+  width: 409.6px;
+  height: 276.4px;
+  margin-left: 3vw;
+}
+
+.chateautexte {
+  display: flex;
+  width: 30vw;
+  margin-left: 3vw;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(180, 178, 37);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.quidditch {
+  display: flex;
+  width: 98vw;
+  margin-top: 5vw;
+}
+
+.textequidditch {
+  display: flex;
+  width: 36vw;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(180, 178, 37);
+  text-shadow: 2px 2px 4px #000000;
+  margin-left: 35vw;
+}
+
+.quidditchimage {
+  display: flex;
+  margin-left: 3vw;
+}
+
+/* Fin du Main */
+
+/* Partie trait séparation */
+
+.trait {
+  width: 98vw;
+  margin-bottom: -6.675vw;
+}
+
+/* Début du Footer */
+
+footer {
+  display: flex;
+  max-width: 100vw;
+  height: 12vw;
+  background-color: #494949;
+  justify-content: flex-end;
+}
+
+/* Partie Partenaire */
+
+.sectionpartenaire {
+  width: 50vw;
+  height: 12vw;
+}
+
+/* Titre section Partenaire */
+
+.titrepartenaire {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+/* Diaporama Partenaire */
+
+.sectiondiapo {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+}
+
+.diaporama {
+  width: 288px;
+  height: 216px;
+  box-shadow: 0px 15px 10px -5px #777;
+  background-color: #ededed;
+  background-size: auto;
+  animation: fondu 15s ease-in-out infinite both;
+}
+
+.diaporama:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fondu {
+  0% {
+    background-image: url(../img/logokajal.PNG);
+  }
+  16.665% {
+    background-image: url(../img/LogoFerhat.PNG);
+  }
+  49.995% {
+    background-image: url(../img/logoSofiane.PNG);
+  }
+  83.325% {
+    background-image: url(../img/logojulie.PNG);
+  }
+  100% {
+    background-image: url(../img/logokajal2.PNG);
+  }
+}
+
+/* Partie Contact */
+
+.sectioncontact {
+  width: 48vw;
+  height: 12vw;
+}
+
+/* Titre section Contat */
+
+.titrecontact {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.imagecontact {
+  display: flex;
+  margin-left: 16vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .header,
+  .main,
+  .footer {
+    width: 480px;
+  }
+
+  .header,
+  .accueil,
+  .title,
+  .onglet {
+    width: 100%;
+    height: auto;
+  }
+
+  .texte1,
+  .chateautexte,
+  .textequidditch {
+    font-size: 4.5px;
+  }
+
+  .chateautexte {
+    margin-left: 10vw;
+  }
+
+  .titrepartenaire,
+  .titrecontact {
+    font-size: 10px;
+  }
+
+  .poudlardchateau,
+  .quidditchimage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .diaporama {
+    width: 38.4px;
+    height: 28.8px;
+    background-size: cover;
+  }
+
+  .imagecontact {
+    width: 100px;
+    height: auto;
+    margin-top: -2vw;
+    margin-left: 13vw;
+  }
+}
